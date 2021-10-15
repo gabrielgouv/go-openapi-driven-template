@@ -1,4 +1,4 @@
-module git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template
+module github.com/gabrielgouv/go-openapi-driven-template
 
 go 1.17
 
