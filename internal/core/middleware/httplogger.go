@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/pkg/properties"
+	"github.com/gabrielgouv/go-openapi-driven-template/pkg/properties"
 	"github.com/go-chi/httplog"
 	"net/http"
 )
