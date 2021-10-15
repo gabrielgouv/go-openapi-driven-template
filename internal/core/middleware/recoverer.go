@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"encoding/json"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/core/err"
+	"github.com/gabrielgouv/go-openapi-driven-template/internal/core/err"
 	"net/http"
 )
 
