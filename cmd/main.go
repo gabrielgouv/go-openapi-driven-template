@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/generated/openapi"
-	_ "git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/generated/swaggerui"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/core/middleware"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/handler"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/pkg/properties"
+	"github.com/gabrielgouv/go-openapi-driven-template/generated/openapi"
+	_ "github.com/gabrielgouv/go-openapi-driven-template/generated/swaggerui"
+	"github.com/gabrielgouv/go-openapi-driven-template/internal/core/middleware"
+	"github.com/gabrielgouv/go-openapi-driven-template/internal/handler"
+	"github.com/gabrielgouv/go-openapi-driven-template/pkg/properties"
 	"github.com/go-chi/chi/v5"
 	"github.com/rakyll/statik/fs"
 	"log"
