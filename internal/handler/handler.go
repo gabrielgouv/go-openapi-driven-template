@@ -2,8 +2,8 @@ package handler
 
 import (
 	"encoding/json"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/generated/openapi"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/core/err"
+	"github.com/gabrielgouv/go-openapi-driven-template/generated/openapi"
+	"github.com/gabrielgouv/go-openapi-driven-template/internal/core/err"
 	"net/http"
 )
 
