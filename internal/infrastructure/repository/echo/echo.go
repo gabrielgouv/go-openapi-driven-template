@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/core/util/dateutil"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/domain/echo"
+	"github.com/gabrielgouv/go-openapi-driven-template/internal/core/util/dateutil"
+	"github.com/gabrielgouv/go-openapi-driven-template/internal/domain/echo"
 )
 
 type EchoMongoRepository struct{}
