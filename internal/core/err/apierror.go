@@ -2,7 +2,7 @@ package err
 
 import (
 	"fmt"
-	"git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/core/util/dateutil"
+	"github.com/gabrielgouv/go-openapi-driven-template/internal/core/util/dateutil"
 )
 
 type ApiError struct {
