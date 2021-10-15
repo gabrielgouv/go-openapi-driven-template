@@ -1,9 +1,9 @@
 package factory
 
 import (
-	domain "git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/domain/echo"
-	repository "git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/infrastructure/repository/echo"
-	service "git.jetbrains.space/keplerproject/kppoc/go-openapi-driven-template/internal/service/echo"
+	domain "github.com/gabrielgouv/go-openapi-driven-template/internal/domain/echo"
+	repository "github.com/gabrielgouv/go-openapi-driven-template/internal/infrastructure/repository/echo"
+	service "github.com/gabrielgouv/go-openapi-driven-template/internal/service/echo"
 )
 
 func MakeEchoService() service.EchoService {
