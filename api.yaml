@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  version: v1
+  title: go-openapi-driven-template
+  description: Echo template example
+servers:
+  - description: localhost
+    url: http://localhost:8080/api/go-openapi-driven-template
+tags:
+  - name: Echo
+
+paths:
+  /v1/echo:
+    get:
+      tags:
+        - Echo
+      summary: Get a echo message
+      operationId: echo
+      parameters:
+        - in: query
+          name: message
+          description: "Message"
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Echo'
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    Echo:
+      type: object
+      properties:
+        message:
+          type: string
+          format: string
+          example: "Echo!"
+          description: "Echo message"
+        date:
+          type: string
+          example: "2021-09-08 20:24:06 +0000 UTC"
+          description: "Date time that echo message was received"
+        randomNumber:
+          type: number
+          example: 42
+          description: "A random number"
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "ERR00001"
+          description: "Custom internal error code"
+        message:
+          type: string
+          example: "An error occurred"
+          description: "Error message"
+        messageDetail:
+          type: string
+          example: "Cannot connect to client"
+          description: "Detailed error message"
+        at:
+          type: string
+          example: "2021-09-13 20:09:18.753726 -0300 -03"
+          description: "Date/time that error occurred"
